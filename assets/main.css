@@ -1,0 +1,41 @@
+html {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.timeToRead {
+    font-family: 'Droid Serif';
+    text-align: left;
+    margin: 0 auto;
+    color: #666;
+    font-size: 12px;
+}
+
+h2 {
+    font-family: 'Droid Serif';
+    font-size: 25px;
+    line-height: .25;
+
+}
+
+.subtitle {
+    font-family: 'Droid Serif';
+    font-size: 18px;
+    color: #666;
+
+}
+
+.para {
+    margin-top: 21px;
+    font-size: 18px;
+    font-family: 'Droid Serif';
+    line-height: 1.5;
+    letter-spacing: .25px;
+    margin: 0 auto;
+    max-width: 50%;
+
+}
+
+.topimg {
+    max-width: 100%;
+}

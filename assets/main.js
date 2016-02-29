@@ -1,12 +1,29 @@
-var readTime = function(x){
-var minutes = Math.floor(x.split(' ').length / 230 )
-  if(minutes === 0) minutes = 1
-  return minutes + ' min read'
-}
+// mine
+(function readTime () {
+    var para = document.querySelectorAll('.para');
+    para = Array.prototype.slice.call(para);
+    var timeToRead = document.querySelector('.timeToRead');
+    var numWords = 0;
 
-var time-to-read = document.querySelector('time-to-read');
+    for (var i = 0; i < para.length; i++) {
+        numWords += para[i].textContent.split(' ').length;
+    };
+
+    var x = Math.ceil(numWords / 230);
+    timeToRead.innerHTML = x + ' min read';
+})();
+
+// loop or reduce to find totalWords in para which is now an array because .slice.call
+//  use text content to get actual content not just number of para objects
 
 
-var para = document.querySelector('para');
 
-console.log(para.textContent.split(' ').length);
+
+
+// (function readTime () {
+//     var para = document.querySelectorAll('.para');
+//     var timeToRead = document.querySelector('.timeToRead');
+//     var words = para.innerHTML.split(' ');
+//     var x = Math.ceil(totalWords / 230);
+//     timeToRead.innerHTML = x + ' min read' + '(' + totalWords;
+// })();
